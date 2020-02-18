@@ -187,3 +187,14 @@ print('Banyaknya perkalian : ', yep(399))
 # ini -> false
 # Sunkis -> false
 #################################################################
+
+kata = input('Masukkan sebuah kata: ')
+def repeatWord(word):
+    word = word.lower()
+    word = list(word)
+    word1 = list(dict.fromkeys(word))
+    if len(word) == len(word1):
+        return True
+    else:
+        return False
+print(repeatWord(kata))
