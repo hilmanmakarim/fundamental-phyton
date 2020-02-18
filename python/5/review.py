@@ -78,104 +78,104 @@
 # print(outliers(angka1))
 # print(outliers(angka2))
 
-angka = input(f"masukkan angka :" )
+# angka = input(f"masukkan angka :" )
 
-def num(x) :
-    x = str(x)
-    x = list(x)
-    b = 1
-    for i in x:
-        i = int(i)
-        b *= i
-    return b
+# def num(x) :
+#     x = str(x)
+#     x = list(x)
+#     b = 1
+#     for i in x:
+#         i = int(i)
+#         b *= i
+#     return b
 
-def count(y):
-    i = 0
-    while y >= 10:
-        i += 1
-        y = num(y)
-    return i
+# def count(y):
+#     i = 0
+#     while y >= 10:
+#         i += 1
+#         y = num(y)
+#     return i
 
-print (count(int(angka)))
-# g = 1
-# for i in range (len(angka)):
-#     n = int(angka[i])
-#     g = g* n
-#     i+=1
+# print (count(int(angka)))
+# # g = 1
+# # for i in range (len(angka)):
+# #     n = int(angka[i])
+# #     g = g* n
+# #     i+=1
 
 
-# print(g)
-# Buatlah sebuah function yang menerima string
-# akan menghilangkan semua huruf vokal
-# dan me return string yang masuk setelah di hilangkan huruf vokalnya
+# # print(g)
+# # Buatlah sebuah function yang menerima string
+# # akan menghilangkan semua huruf vokal
+# # dan me return string yang masuk setelah di hilangkan huruf vokalnya
 
-# CLUE :
-# filter
-# ... not in ...
-# join
+# # CLUE :
+# # filter
+# # ... not in ...
+# # join
 
-# Today is friday
-def check(x):
-    # hasil evaluasi dari .. not in .. adalah boolean
-    # sehingga bisa langsung kita return
-    return x not in ['a', 'i', 'u', 'e', 'o']
+# # Today is friday
+# def check(x):
+#     # hasil evaluasi dari .. not in .. adalah boolean
+#     # sehingga bisa langsung kita return
+#     return x not in ['a', 'i', 'u', 'e', 'o']
 
-def no_vowel(string):
-    resFilter = list(filter(check, string))
-    return "".join(resFilter)
+# def no_vowel(string):
+#     resFilter = list(filter(check, string))
+#     return "".join(resFilter)
     
-no_vowel('Today is friday')
+# no_vowel('Today is friday')
 
-# resVowel = no_vowel('Today is friday')
-# print(resVowel)
+# # resVowel = no_vowel('Today is friday')
+# # print(resVowel)
 
 
-# Happy weekend
+# # Happy weekend
 
-####################################################################
-# Berapa jumlah perkalian yang dapat dilakukan untuk sebuah integer
-# 399 -> 3*9*9 = 243 -> 2*4*3 = 24 -> 2*4 = 8 (3 kali)
-# 39 -> 3*9 = 27 -> 2*7 = 14 -> 1*4 = 4 (3 kali)
-# 24 -> 2*4 = 8 (1 kali)
-# 4 -> nol kali
-####################################################################
+# ####################################################################
+# # Berapa jumlah perkalian yang dapat dilakukan untuk sebuah integer
+# # 399 -> 3*9*9 = 243 -> 2*4*3 = 24 -> 2*4 = 8 (3 kali)
+# # 39 -> 3*9 = 27 -> 2*7 = 14 -> 1*4 = 4 (3 kali)
+# # 24 -> 2*4 = 8 (1 kali)
+# # 4 -> nol kali
+# ####################################################################
 
-def yep(numb):
-    # numb : 399
-    numb = str(numb)
+# def yep(numb):
+#     # numb : 399
+#     numb = str(numb)
 
-    # numb = '399'
-    listInt = []
-    for i in numb: # '3', '9', '9'
-        listInt.append(int(i))
+#     # numb = '399'
+#     listInt = []
+#     for i in numb: # '3', '9', '9'
+#         listInt.append(int(i))
 
-    #listInt = [3, 9, 9]
+#     #listInt = [3, 9, 9]
 
-    count = 0
-    while len(listInt) > 1:
-        # Mengalikan semua angka pada list
-        res = 1
-        for i in listInt: # listInt = [3, 9, 9]
-            res *= i 
+#     count = 0
+#     while len(listInt) > 1:
+#         # Mengalikan semua angka pada list
+#         res = 1
+#         for i in listInt: # listInt = [3, 9, 9]
+#             res *= i 
 
-        # res = 8
+#         # res = 8
         
-        # Hasil akhir dari perkalian akan diubah menjadi list lagi
-        # Untuk kemudian dilakukan perkalian seperti di atas
-        res = str(res)
-        # res = '243'
-        listInt = []
-        for i in res:
-            listInt.append(int(i))
+#         # Hasil akhir dari perkalian akan diubah menjadi list lagi
+#         # Untuk kemudian dilakukan perkalian seperti di atas
+#         res = str(res)
+#         # res = '243'
+#         listInt = []
+#         for i in res:
+#             listInt.append(int(i))
 
-        # listInt = [8]
+#         # listInt = [8]
 
-        count += 1
+#         count += 1
 
-    return count
+#     return count
 
 
-print('Banyaknya perkalian : ', yep(399))
+# print('Banyaknya perkalian : ', yep(399))
 
 
 
